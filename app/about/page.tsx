@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Heart, Star, Users, Award, Leaf } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function AboutPage() {
   const [showPhoneNumbers, setShowPhoneNumbers] = useState(false)
@@ -17,7 +18,13 @@ export default function AboutPage() {
       <section className="relative bg-gradient-to-br from-card to-muted py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
-            <Heart className="w-16 h-16 text-accent mx-auto mb-4" />
+            <Image
+              src="/cocologo.png"
+              alt="Coco's Nails & Beauty Station Logo"
+              width={128}
+              height={128}
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 mx-auto mb-4"
+            />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
             About Coco's Nails & Beauty Station
