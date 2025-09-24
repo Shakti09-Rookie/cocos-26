@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export function Navigation() {
   const pathname = usePathname()
@@ -15,8 +16,8 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">C</span>
+            <div className="w-8 h-8 flex items-center justify-center">
+              <Image src="/cocologo.png" alt="Coco's Logo" width={32} height={32} className="w-8 h-8 object-contain" />
             </div>
             <span className="font-bold text-lg sm:text-xl text-foreground">{"Coco's Nails & Beauty"}</span>
           </Link>

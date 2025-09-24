@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description:
     "Experience luxury beauty treatments at Coco's Nails & Beauty Station. Professional hair, nails, makeup, and spa services in an elegant, relaxing atmosphere.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({

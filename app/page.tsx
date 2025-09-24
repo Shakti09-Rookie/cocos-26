@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Sparkles, Heart, Star, Phone, MapPin, Clock } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function HomePage() {
   const [showHeroPhoneNumbers, setShowHeroPhoneNumbers] = useState(false)
@@ -25,7 +26,14 @@ export default function HomePage() {
       <section className="relative bg-gradient-to-br from-card to-muted py-12 sm:py-16 md:py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-4 sm:mb-6">
-            <Sparkles className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-accent mx-auto mb-3 sm:mb-4" />
+            <Image
+              src="/cocologo.png"
+              alt="Coco's Nails & Beauty Station Logo"
+              width={250}
+              height={250}
+              className="mx-auto mb-3 sm:mb-4 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain"
+              priority
+            />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 sm:mb-6 text-balance px-2">
             Welcome to Coco's Nails & Beauty Station
